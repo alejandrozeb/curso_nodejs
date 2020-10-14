@@ -29,6 +29,21 @@
                         npm -v
                         git --version
                         docker -v
-    
+    Procesadores y codigo maquina:
+    JS V8
+    Procesador: maquina de procesamiento que hace un trabajo.
+        no todos tienen el mismo lenguaje.
+        lo encontramos en nuestros smarthphones.
+    Codigo de maquina:
+        Lenguajes de programacion que los procesadores pueden interpretar.
+    ¿por que no escribir lenguaje de maquina directamente?
+        el tamaño como assembler que es en bajo nivel.
+        los de alto nivel son copilados a lenguaje de maquina.
+        c,c++: seintaxis de C usados por js y java.
+            c++ te permite usar las funciones de bajo nivel.
+        
+            JS es un lenguaje que se traduce a lenguaje de maquina.
+
+        NODE.JS=C++     nodejs esta escrito en c++, es un programa de c++,v8 tambien esta escrito en c++. 
 
 */
