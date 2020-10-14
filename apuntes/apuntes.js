@@ -67,7 +67,23 @@
         esta escrito en c++. se usa en google chrome implementa los estadanres ECMAScript.
         v8 usa arm64
         para transipilar el codigo js a lenguaje de maquina se usa c++.
-        
+
+
+        VISUAL ESTUDIO CODE
+        shit crlt p
+        podemos usar el comando code en consola para manipular nuestro VS.
+        ejemplo code -v para ver la version 
+        code v8/    abre directorios
+
+        extensiones necesarias.
+        docker  realizado por microfot
+        javascript   realizado por "charalampos karypidis" con snippets
+        Path intellisense   christian kohler
+        npm         por egamma
+        prettier-code formatter por prettier     da formato
+        node.js extension pack  wade anderson
+
+
 
 
 */
