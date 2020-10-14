@@ -61,5 +61,13 @@
         Engine:
             convierte codigo js compila a lenguaje de maquina, 
             v8 es un motor de js y es el nucleo de js
+    V8: open source libre para usar y modificar desarrollado por google.
+        https://github.com/v8/v8
+
+        esta escrito en c++. se usa en google chrome implementa los estadanres ECMAScript.
+        v8 usa arm64
+        para transipilar el codigo js a lenguaje de maquina se usa c++.
+        
+
 
 */
