@@ -46,4 +46,20 @@
 
         NODE.JS=C++     nodejs esta escrito en c++, es un programa de c++,v8 tambien esta escrito en c++. 
 
+    ECMA:(EUROPEAN COMPUTER MANUFACTURERS ASSCIATION)
+        oraganizacion internacional basada en membresias de estandares para la comunicaicon y la informacion.
+    
+        1997 Tc39 se crea un comite para estandarizar JS.(regalas de js ECMAScript)
+
+        Motores de intrepretacion entre navegadores de diferentes empresas que usaron js pero no eran igual y se crearon los estandares.
+
+        TC39
+        2014    2015-1016   2016-1017
+        ES5      ES6            ES-7
+        ES5             ESNEXT
+
+        Engine:
+            convierte codigo js compila a lenguaje de maquina, 
+            v8 es un motor de js y es el nucleo de js
+
 */
