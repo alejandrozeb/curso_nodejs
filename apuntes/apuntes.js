@@ -87,8 +87,31 @@
 
         js -> v8 -> codigo maquina
 
+        v8 te permite escribir en c++ y agregar mas funciones a nodejs.
         
+        implementaremos la funcion print() con la ayuda de v8.
+        podemos implementar una funcion en v8 en c++ y decirle que su comportamiento desde js sera diferente.
+        de esta forma ya podemos tener una version de node.js propia.
 
+        CLIENTE Y SERVIDOR:
+            Node js esta diseñado para usarlo en servidor
+        el cliente solicita al servidor para hacer un trabajo.
+
+        cliente ->request->servidor         modelo cliente servidor
+                <-response<-  
+         ademas tiene un lenguaje estandar entre ellos.
+
+            navegador   http  webserver
+                        request
+                        response
+                        
+        jquery escrita en js
+        ajax   comunicacion
+
+        normalmente se cambia en lenguaje en backend y en front es js
+        con nodejs podemos tener un estandar en el lenguaje y usamos el mismo pero
+        nos es lo principal lo interesante es que podemos usar las mismo librerias tanto en cliente como en servidor.
+        
 
 
 */
