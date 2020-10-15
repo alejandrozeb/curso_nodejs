@@ -127,6 +127,5 @@
         expresiones,tipos de datos,variables,condicionales,objetos,colecciones,arrays,funciones,callback,promesas,async/await
         son los conocimientos minimos de js para poder usar nodejs.
         Expresiones:
-            Cualquier cosa que produzca un valor primitivo.
-
+            Cualquier cosa que produzca un valor primitivo. 
 */
