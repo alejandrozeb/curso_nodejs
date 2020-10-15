@@ -111,7 +111,16 @@
         normalmente se cambia en lenguaje en backend y en front es js
         con nodejs podemos tener un estandar en el lenguaje y usamos el mismo pero
         nos es lo principal lo interesante es que podemos usar las mismo librerias tanto en cliente como en servidor.
-        
 
+        js en el servidor
+        caracteristicas
+            - archivos js debe tener la capacidad de procesar archivos
+            - bases de datos js debe poder administrar uns bd realcional o no
+            - internet deberia sera capaz de comunicarse atravez de internet
+            - Solicitud y respuesta debe ser capaz de recibir una solicitud de un cliente y debe poder responder
+            - hilos debe tner la capacidad de manejar diferentes procesos al mismo tiempo nodejs es single en un solo hilo.
+            - hardware debe ser capaz de manipular
+            - resursos manipular los recursos del servidor
+            - software debe ser capaz de comunicarse con otros lenguajes.
 
 */
