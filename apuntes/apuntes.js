@@ -143,5 +143,5 @@
             ejecutando codigo con nodejsdesde terminal.
             node .\4-operadoreslog.js
         
-        
+            /////// podemos usar log como corto para console log
 */
