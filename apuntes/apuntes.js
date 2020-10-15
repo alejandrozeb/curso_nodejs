@@ -122,5 +122,11 @@
             - hardware debe ser capaz de manipular
             - resursos manipular los recursos del servidor
             - software debe ser capaz de comunicarse con otros lenguajes.
+        REPASO JS
+        vanilla js o javascript
+        expresiones,tipos de datos,variables,condicionales,objetos,colecciones,arrays,funciones,callback,promesas,async/await
+        son los conocimientos minimos de js para poder usar nodejs.
+        Expresiones:
+            Cualquier cosa que produzca un valor primitivo.
 
 */
