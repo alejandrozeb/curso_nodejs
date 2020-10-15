@@ -138,7 +138,10 @@
             son espacios de memoria reservados siempre y cuando el programa este funcionando
 
             console.log(bar); obtnemos el valor desde la memoria.
-
+        oprador logico
+            nos permite crear valores a partir de otros.
+            ejecutando codigo con nodejsdesde terminal.
+            node .\4-operadoreslog.js
         
         
 */
