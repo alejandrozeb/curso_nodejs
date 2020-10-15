@@ -83,6 +83,11 @@
         prettier-code formatter por prettier     da formato
         node.js extension pack  wade anderson
 
+        AGREGANDOCOMPORTAMIENTO AL CORE DE NODE JS
+
+        js -> v8 -> codigo maquina
+
+        
 
 
 
