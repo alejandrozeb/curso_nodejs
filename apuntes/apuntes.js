@@ -128,4 +128,17 @@
         son los conocimientos minimos de js para poder usar nodejs.
         Expresiones:
             Cualquier cosa que produzca un valor primitivo. 
+        Variables:
+            una variable esta formada por un espacio en el sistema de almacenaje un nombre simbolico que esta asociado a dicho  espacio.
+            ej imagina una caja donde colocas algun objeto como una laptop y etiquetala par apoder encontrarla y usarla. ahora crea mas cajas de ese tipo ya todas ya van a tener un identificador
+
+            funcionamiento
+            RAM -> let bar =5;  se reserva un espacio de memoria con el valor 5 y el tipo bar
+
+            son espacios de memoria reservados siempre y cuando el programa este funcionando
+
+            console.log(bar); obtnemos el valor desde la memoria.
+
+        
+        
 */
