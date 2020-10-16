@@ -148,5 +148,8 @@
             se puden crear de diferentes formas y en js todo esat representado como objeto
         COLECCIONES:
             cuando necesitamos almacenar muchos datos en una variable
+        BUCLES:
+            son iteradores que nos permiten recorrer una coleccion
+        
 
 */
