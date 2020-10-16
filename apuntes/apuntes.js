@@ -152,7 +152,42 @@
             son iteradores que nos permiten recorrer una coleccion
         FUNCIONES:
             cuando necestiemos un pedazo de codigo varias veces para no repetir codigo
+        TEORIA CALLBACKS
+            es una funcion x que usa como argumento de otra funcion y, cuando se llama a y, esta ejecuta x.(para conseguirlo usualmente lo que se pasa a y es el puntero de x)
+
+            ejemplos setTimeoout
+            setTimeout(function,time,arg?);
+            recibe una funcion, luego el valor de tiempo y puede o no tener un argumento
+
+            setTimeout(function(){
+                console.log('hello');
+            },2000)
+            en 2 segundos se ejecutara el hello
+
+            otro ejemplo
+            calculate(n1,n2, operation);
+
+                function calculate(n1,n2,operation){
+                    return operation(n1,n2);
+                }
+            enviamos dos numeros y una funcion retornamos el resultado de la funcion operation
+
+                function add(n1,n2){
+                    return n1+n2;
+                }
+            creamos la funcion para que jecute
+
+            const result = calculate(1,8,add);
+            console.log(result)//9
+
+            cuando nos referimos a pasr el puntero es psarlo como argumento.
+
+            VENTAJAS:
+                son simples, conceptualmente, son universales no requieren transpilar es nativo
+            DESVENTAJAS:
+                composicion tosca, las llamadas aninadas al tener muchos callbacks
+                flujo poco intuitivo requieren que nos movamos dentro del codigo para comprender el flujo
             
-        
+                muchas funciones estan basadas con callbacks a parit de ES& se usan promesas, usa callbacks solo cuando sea necesario y siguiendo los estandares de js
 
 */
