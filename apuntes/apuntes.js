@@ -150,6 +150,9 @@
             cuando necesitamos almacenar muchos datos en una variable
         BUCLES:
             son iteradores que nos permiten recorrer una coleccion
+        FUNCIONES:
+            cuando necestiemos un pedazo de codigo varias veces para no repetir codigo
+            
         
 
 */
