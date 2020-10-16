@@ -146,4 +146,7 @@
             /////// podemos usar log como corto para console log
         OBJETOS:
             se puden crear de diferentes formas y en js todo esat representado como objeto
+        COLECCIONES:
+            cuando necesitamos almacenar muchos datos en una variable
+
 */
