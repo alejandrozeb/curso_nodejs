@@ -189,5 +189,40 @@
                 flujo poco intuitivo requieren que nos movamos dentro del codigo para comprender el flujo
             
                 muchas funciones estan basadas con callbacks a parit de ES& se usan promesas, usa callbacks solo cuando sea necesario y siguiendo los estandares de js
+        PROMESAS TEORIA:
+            son una forma de manejar asincronia.
+            Es un objeto que representa la terminacion o el fracaso eventual de una operacion asincrona.
+                esencialmente, una promesa es un objeto devuelto al cual se adjuntan funciones callback, en lugar de pasar callbacks a una funcion
+            todo surge a partir de la clase Promise que es nativo
+                const promise = new Promise(callback);
+                
+                el callback debe responder a una funcion de este tipo
+
+                function executor(resolve,reject){
+                    //si funciona
+                    resolve();
+                    //si falla
+                    reject();
+                }
+
+                recibe dos argumentos, que se los pasa la clase promise.
+                si todo funciona se ejecuta resolve
+                si falla llama reject();
+
+                uso
+                const promise = nre Promise(executor);
+                una promesa devuelve
+                    .then()     viene la data si elrsolve si ha invocado
+                    .catch()    viene el error cuando se ejecuta el reject   
+                    .finally(); siempre se ejecuta
+
+                VENTAJAS
+                Se pueden enlazar facilmente para manejar flujos asincronos complejos sin tener que recurrir a mas anidaciones como se requiren en callbacks, con esto ya solucionamos ese problema
+                Poderoso proporciona una capacidad excepcional para componer operaciones asincronas complejas, 
+                DESVENTAJAS
+                exepciones que desaparecen se debe declara catch() para manejar errores en lugar del tradicional try/catch.
+                
+                
+                ////usa promesas en vez de callbacks para mantener el standar, ten cuidad en caer en el promises hell por la excesiva anidacion
 
 */
