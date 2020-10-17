@@ -223,6 +223,13 @@
                 exepciones que desaparecen se debe declara catch() para manejar errores en lugar del tradicional try/catch.
                 
                 
-                ////usa promesas en vez de callbacks para mantener el standar, ten cuidad en caer en el promises hell por la excesiva anidacion
+                ////usa promesas en vez de callbacks para mantener el standar, ten cuidad en caer en el promises hell por la excesiva anidacion.
+        ASYNC/AWAIT:
+                async: cuando se llama una funcion async, esta devulve un elemento Promise cuando la funcion async genera una excepcion o algun valor, Promise se rechazara con el valor generado.
+                await: devolvera una promesa
+                la expresion await provoca que la ejecucion de una funcion async sea pauseada hasta que una Promise sea terminada o rechazada y regresa a la ejecucion de la funcion async despues del termino. al regreso de la ejecucion, el valor de la expresion await es la regresada por una promesa terminada. :va a esperar a esa promesa ya sea si funciona o error.
+        
+            tenemos que usar try catch para los errores.
+            Cuando utilizas async y await tienes un codigo mucho mas limpio y sobre todo un mejor control de la excepcinoes de ser posible, siempre utilizan async y await. tiens un codigo mas limpio.
 
 */
