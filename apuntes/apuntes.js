@@ -231,5 +231,8 @@
         
             tenemos que usar try catch para los errores.
             Cuando utilizas async y await tienes un codigo mucho mas limpio y sobre todo un mejor control de la excepcinoes de ser posible, siempre utilizan async y await. tiens un codigo mas limpio.
+        Modules, exports & requires:
+            Bloque de codigo reutilizable cuya existencia no afecta accidentalmente a otro codigo a partir de la version 6 
+            NOdejs implemento Commonjs es un estandar acordado sobre como deberian estructurarse los modulos de codigo.
 
 */
