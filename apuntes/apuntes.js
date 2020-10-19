@@ -234,5 +234,6 @@
         Modules, exports & requires:
             Bloque de codigo reutilizable cuya existencia no afecta accidentalmente a otro codigo a partir de la version 6 
             NOdejs implemento Commonjs es un estandar acordado sobre como deberian estructurarse los modulos de codigo.
+            cuando usamos una libreria las usamos como modulos
 
 */
