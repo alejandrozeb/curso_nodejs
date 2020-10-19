@@ -235,5 +235,14 @@
             Bloque de codigo reutilizable cuya existencia no afecta accidentalmente a otro codigo a partir de la version 6 
             NOdejs implemento Commonjs es un estandar acordado sobre como deberian estructurarse los modulos de codigo.
             cuando usamos una libreria las usamos como modulos
+        Sincronia y asincronia
+            js No es asincrono:
+                ASINCRONIA: más de un proceso, o más de una cosa ejecutandose simultaneamente.
+             
+            NODEJS realiza las tareas de manera asincrona pero v8 lo procesa sincronicamente
 
+                SINCRONIA: Un unico proceso o unica cosa ejecutandose a la vez
+            JavaScript es Sincronico se ejecuta linea por linea y nunca dos lineas a la vez.
+            js fue diseñado para ser sincronico sin embargo
+            NODEJS es asincronico y v8 esta incrustado en el y asi mientras v8 transpila codigo js a lenguaje de maquina, Nodejs puede realizar otras tareas.
 */
