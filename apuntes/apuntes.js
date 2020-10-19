@@ -245,4 +245,14 @@
             JavaScript es Sincronico se ejecuta linea por linea y nunca dos lineas a la vez.
             js fue diseñado para ser sincronico sin embargo
             NODEJS es asincronico y v8 esta incrustado en el y asi mientras v8 transpila codigo js a lenguaje de maquina, Nodejs puede realizar otras tareas.
+        EVENTOS
+            EVENTO: Es algo que ha sucedido en nuestra aplicacion al que podemos reposnder.
+            no esta limitado a js y se encuetra en muchas areas del desarrollo del software.
+            tipos de eventos en nodejs, se confunden con un solo evento pero estan atados se trata de:
+            EVENTOS DE SISTEMA: que la gestiona la libreria libuv qeu son parte del core de nodejs
+            EVENTOS PERSONALIZADOS: es una libreria de eventos de js que no es parte de libuv.
+            
+            se suele confundir ya que libuv se encarga de generar un evento personalizado cuando pasa un evento del sistema por eso se piensa que son unos solo
+
+            evento js: no son eventos reales, no existe un objeto llamado evento en el core de js pero para enterder este comportamiento lo veremos en nuestro ejemplo de eventos
 */
