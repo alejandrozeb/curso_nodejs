@@ -255,4 +255,6 @@
             se suele confundir ya que libuv se encarga de generar un evento personalizado cuando pasa un evento del sistema por eso se piensa que son unos solo
 
             evento js: no son eventos reales, no existe un objeto llamado evento en el core de js pero para enterder este comportamiento lo veremos en nuestro ejemplo de eventos emisor de eventos
+            
+            EVENT EMITTER nodejs
 */
