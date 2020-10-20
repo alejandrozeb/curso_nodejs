@@ -257,4 +257,31 @@
             evento js: no son eventos reales, no existe un objeto llamado evento en el core de js pero para enterder este comportamiento lo veremos en nuestro ejemplo de eventos emisor de eventos
             
             EVENT EMITTER nodejs
+            EVENLOOP,LIBUV Y NON-BLOCKING I/O
+            eventos personalizados con los event emmiter que viene en un array de funciones
+
+            EVENTOS DEL SISTEMA manejados por libuv escritos en c y c++
+
+            v8->
+            v8 sincrono linea por linea.
+            libuv escrita en c++ diseñada para eventos, y solicita algo al Sistema operativo, mientras v8 sigue realizando su funcion
+            libuv tiene un queue compuesto por
+                queue
+
+
+                eventloop   //comprueba los eventos 
+                libuv
+
+                pasa un evento y el sistema operativo responde con un evento que realizo y se pone a la cola.
+
+                libuv verifica que se realizo la tarea y raliza un callback a v8 como un emisor de eventos y se va a la cola de v8 sincrono.
+
+                v8 termina todos sus tareas y recien atiende a libuv
+                pero al realizar el trabajo diferenciado etre v8 y libuv lo hace asincrono.
+
+                non-blockingI/O
+                capacidad de realizar acciones sin pausar o detener otras.
+                un proceso en nodejs no detiene otro proceso siempre y cuando use un callback promise o async
+
+            
 */
