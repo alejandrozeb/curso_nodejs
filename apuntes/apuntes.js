@@ -282,6 +282,15 @@
                 non-blockingI/O
                 capacidad de realizar acciones sin pausar o detener otras.
                 un proceso en nodejs no detiene otro proceso siempre y cuando use un callback promise o async
-
+        HTTP Y SERVIDORES:
+            HTTP: sistema mediante el cual se permite la transferencia de informacion entre diferentes servicios y los clientes que utilizan paginas web.
+            protocolo de comunicacion entre el cliente y el servidor. HTTPS encriptado
+            SERVIDOR WEB: es el software que se encagar de despachar el contenido de un sitio web al usuario.
+        Nodejs y servidores web:
+            Nodejs es bueno al creas API
+            nodejs contiene si propio servidor, crea su propio entorno 
+            Tolerancia a fallos, si nose maneja de manera correcta.
+            Framewokrs vs vanilla, podemos desarrollar de manera rapita si queremos podemos usar vanilla o nativa.
+            
             
 */
