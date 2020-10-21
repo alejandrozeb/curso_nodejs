@@ -291,6 +291,13 @@
             nodejs contiene si propio servidor, crea su propio entorno 
             Tolerancia a fallos, si nose maneja de manera correcta.
             Framewokrs vs vanilla, podemos desarrollar de manera rapita si queremos podemos usar vanilla o nativa.
-            
-            
+    SERVIRDOR FUNCIONAMIENTO
+        Tenemos un cliente que puede ser cualquier navegador que hace un request a un servidor
+        ese servidor lo procesa y devuelve un response al cliente y esto ocurre con el protocolo http o https
+                                HTTP/S
+                cliente ------------------->servidor
+                            request
+                cliente<--------------------servidor
+                            response
+         tanto el cliente como el srvidor conocen informacion de ambos cache formato SO       
 */
