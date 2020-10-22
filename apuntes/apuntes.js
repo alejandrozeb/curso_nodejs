@@ -299,5 +299,11 @@
                             request
                 cliente<--------------------servidor
                             response
-         tanto el cliente como el srvidor conocen informacion de ambos cache formato SO       
+         tanto el cliente como el srvidor conocen informacion de ambos cache formato SO 
+    RUTAS:
+        es un identificardor unico
+                / esta es la ruta
+        si tenemos otra
+                /about  es otra
+        el servidor entiende que usa ese recurso
 */
