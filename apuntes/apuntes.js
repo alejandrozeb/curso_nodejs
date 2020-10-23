@@ -306,4 +306,18 @@
         si tenemos otra
                 /about  es otra
         el servidor entiende que usa ese recurso
+
+    NPM: se encarga de administrar nuestros paquetes de tercerres encaso necesitemos como express
+    teneos que inicianilazr el proyecto
+    npm init
+    en consola, inicia un modulo de nodejs.
+
+    dependencia de desarrollo 
+    dependencia de produccion
+
+    npm install express@4.17.1 linea de comando para instalar la dependenciade express 
+    nodemodules no se debe subir a produccion
+    para installar las dependecias necesarias de un proyecto externo
+    npm install
+    busaca el package.json e instala todas las dependencias
 */
