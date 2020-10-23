@@ -320,4 +320,11 @@
     para installar las dependecias necesarias de un proyecto externo
     npm install
     busaca el package.json e instala todas las dependencias
+    HTTP METODOS:
+        son la forma como nos comunicamos con los recursos de nuestro servidor
+        get _> lectura
+        post -> crear un nuevo recurso
+        put -> para reemplazar un recurso existente
+        patch -> reemplazar un solo elemento del recurso, actualizar una propiedad de un recurso
+        delete -> remover un recurso
 */
