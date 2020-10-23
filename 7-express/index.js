@@ -1,11 +1,9 @@
-//es simple como crear los paquetes nativos de js
+const express = require('express'); //importamos la libreria en un objeto
+const server = express(); //nos devuelve un objeto de tipo express, es una bstraccion
 
-const http = require('http');
-
-http.createServer((request,response)=>{ 
-    response.write("Hello World!!");
-    response.end(); //terminamos y enviamos
-}).listen(8080);
-//pasamos un callbaxk,ademas pasamos un puerto donde se escuvha el servidor
-//cuando ejecutamos en consola notamos que no se cierra el comando paramos la  con crtl +c
-//http://localhost:8080/
+server.listen(8080, ()=>{
+    //se ejecuta cuando el servidor inicializa
+    console.log("Server is runnig on port"+8080);
+    //el mensaje sale en la consola no en el navegador
+})
+//el mensaje del navegador es cannot get / donde sabemos que express ya esta corriendo, nos da por que no estamos manejando esa ruta
