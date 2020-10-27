@@ -327,4 +327,15 @@
         put -> para reemplazar un recurso existente
         patch -> reemplazar un solo elemento del recurso, actualizar una propiedad de un recurso
         delete -> remover un recurso
+    PROYECTO 1
+                instalar postman
+    Podemos cambiar el archivo de package.json con las especificaciones que queramos
+
+    en el package.json
+    podemos agragar los scripts que queramos
+    "test": "echo \"Error: no test specified\" && exit 1"
+    cambiamos por 
+    "start": "node index.js"
+
+    cada vez que usamos el comoando start se inicializara nuestro entry point
 */
