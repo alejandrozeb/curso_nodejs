@@ -358,4 +358,16 @@
         para autenticacion seria midlleware
         o tratar la informacion
     la carpeta public en una carpeta si restricciones podemos acceder al material son intermediario
+    MVC
+    Es un patron de diseño de software wl codigo de los programas por sus diferentes respnsabilidades.
+
+    modelo->Controlador->->vistacliente
+
+    modelo<-Controlado<-vista<-cliente
+
+    el cliente pide una vista este el contrlador lo renderiza peri si se necetica data pide al modelo y regresa.
+                 en data esta una representacion de una bd
+                 routes todas las rutas (rutas con la vista)
+    es una buena practica especificar que hace cada arivo 
+    homo.controller.js como jemeplo sabemos que es un controller
 */
