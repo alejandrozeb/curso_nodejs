@@ -338,4 +338,15 @@
     "start": "node index.js"
 
     cada vez que usamos el comoando start se inicializara nuestro entry point
+
+    algunos comando son de terceros 
+     dev nodemon index.js
+    pero antes debemos instalarla
+
+    npm install -D nodemon
+    indicamos que es ara el desarrollo y nodemon verifica y reinicia el servidor despues de un cambio.
+                para correr
+    npm run dev
+    usamos run por que no forma parte del core de node si no es una dependencia de terceros.
+    
 */
