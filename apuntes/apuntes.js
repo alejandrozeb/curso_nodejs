@@ -348,5 +348,7 @@
                 para correr
     npm run dev
     usamos run por que no forma parte del core de node si no es una dependencia de terceros.
-    
+  VARIABLES DE ENTORNO:
+    son variables que las configura el sistemas operativo, y se la configura para produccion
+    el sevidor e encarga setear estas variables y si no se van al que configurmos como localhost(4000)
 */
