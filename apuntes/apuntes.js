@@ -351,4 +351,6 @@
   VARIABLES DE ENTORNO:
     son variables que las configura el sistemas operativo, y se la configura para produccion
     el sevidor e encarga setear estas variables y si no se van al que configurmos como localhost(4000)
+
+    axios es para realizar consultas http cpn js
 */
