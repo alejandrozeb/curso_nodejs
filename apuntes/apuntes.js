@@ -353,4 +353,9 @@
     el sevidor e encarga setear estas variables y si no se van al que configurmos como localhost(4000)
 
     axios es para realizar consultas http cpn js
+    MIDDLEWARE:
+        Es un bloque de código que se ejecuta entre la petición que hace el usuario hasta que la petición legga al servidor. es un intermediario
+        para autenticacion seria midlleware
+        o tratar la informacion
+    la carpeta public en una carpeta si restricciones podemos acceder al material son intermediario
 */
