@@ -370,4 +370,7 @@
                  routes todas las rutas (rutas con la vista)
     es una buena practica especificar que hace cada arivo 
     homo.controller.js como jemeplo sabemos que es un controller
+
+    MIDDLEWARES: 
+    son funcion que reciben el response request y el next
 */

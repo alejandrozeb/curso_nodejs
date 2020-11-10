@@ -6,6 +6,8 @@ const server = express();
 const {PORT} = require("./config");
 //imporatamos las rutas
 const {HomeRoutes} = require("./routes");
+//importando middlewares
+const {NotFoundMiddleware} = require("./middlewares");
 
 server.use(express.static('./public'));   //para material publico en nuestra aplicacion
 server.use(express.json());
@@ -13,6 +15,13 @@ server.use(express.json());
 
 server.use("/", HomeRoutes);
 //busca en homeruotes la t¡ruta / y responde con el controlador
+
+
+
+//cuando busque eb todoas las rutas y no encuentre usamos el not found
+
+server.use(NotFoundMiddleware);
+
 server.listen(PORT, ()=>{
     console.log(`Aplication running on PORT ${PORT}`);
 });
