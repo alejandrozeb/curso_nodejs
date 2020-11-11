@@ -15,5 +15,19 @@ class QuotesController{
         return render("quotes",res);
     }
 
+    async get(req,res){
+        return res.send(db);
+    }
+
+    async add(req,res){
+        const {body:quote}=req;
+        const lastQuote = db[db.length-1];
+        const {id} = lastQuote;
+        quote.id = id+1;
+        db.push(quote);
+
+        fs.writeFileSync(DB_PATH, JSON.stringify(db));
+        return res.status(201).send();
+    }
 }
 module.exports = new QuotesController();

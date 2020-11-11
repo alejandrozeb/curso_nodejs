@@ -1,5 +1,6 @@
 window.onload = async function() {
   const quotes = (await axios.get("/quotes/all")).data;
+  //hacemos una peticion tipo axios al end point
   let rows = "";
   for (const quote of quotes) {
     rows += `<div class="col-xl-3 col-md-6 mb-4">
