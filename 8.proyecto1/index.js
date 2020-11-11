@@ -5,7 +5,7 @@ const server = express();
 //traemos la variable de entorno
 const {PORT} = require("./config");
 //imporatamos las rutas
-const {HomeRoutes} = require("./routes");
+const {HomeRoutes, QuotesRoutes} = require("./routes");
 //importando middlewares
 const {NotFoundMiddleware} = require("./middlewares");
 
@@ -14,6 +14,7 @@ server.use(express.json());
 //para recibir las peticiones como json
 
 server.use("/", HomeRoutes);
+server.use("/", QuotesRoutes);
 //busca en homeruotes la t¡ruta / y responde con el controlador
 
 
