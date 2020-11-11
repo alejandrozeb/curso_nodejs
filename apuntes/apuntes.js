@@ -407,6 +407,10 @@
     ORM SQLITE,MONGODB  
     ODM(nosql)  SEQUELIZE MONGOOSE
 
+    SEQUELIZE
+        aplicaion de consola
+        
+
 
 
 */
