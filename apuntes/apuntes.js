@@ -373,4 +373,40 @@
 
     MIDDLEWARES: 
     son funcion que reciben el response request y el next
+    BD 
+    relacional o norelacional
+
+    Las bd sql desde los 80 
+    las bd nosql desde 2012 tiene su boom 
+
+    bd relacional EL principio de las bases de datos realacionales e basa en la organiazcion de la informacion en trozos pequeños, que se relaconan entre ellos mediante la relacion de identificadores con un id.
+
+        ACID    
+        ATOMICIDAD
+        CONSISTENCIA 
+        AISLAMIENTO
+        DURABILIDAD
+        son propiedades de las bases de datos que la hacen mas robustas
+        MSSQL,ORACLE,POSTGRES,MySQL,SQLITE
+
+    BD no relacional no tienen un identificador que sirva de ralcion entre un conjunto de datos y otros, son muy utiles cuando no tenemos un esquema de lo que se va a almacenar.
+    LA ESTRCUTURA EVOLUTIVA DE UNA BD
+        MONGODB,CASANDRA,RETHINKDB,FIREBASE DATABASE, REDIS
+    
+    SQL usa tablas con filas y columnas
+    cada row es un registro
+
+    sqlnorelacional
+    un array de object o un json
+    document
+
+    Usaremos un orm
+    OBJECT RELATIONAL MAPPING, es un modelo de programacion que consiste en la transformacion de las tablas de una base de datos, en una serie de entidades que simplifiquen las tareas básicas de acceso a los datos para el programador.
+    Crea un objeto a partir de una tabla en la base de datos.
+
+    ORM SQLITE,MONGODB  
+    ODM(nosql)  SEQUELIZE MONGOOSE
+
+
+
 */
