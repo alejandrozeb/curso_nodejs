@@ -427,9 +427,10 @@
 
     en la consola de esta forma cramos un nuevo modelo con los atributos y tipos de datos.
          Sequelize crea el modelo y crea la bd en algun administrador de db ya sea postgress, sqlserver o mysql.
-    
+        ademas crea en migracion su archivo listo para realizar operaciones 
         migracion
-        es un control de versiones, lleva todos los modelos a una bd real.
+        es un control de versiones, lleva todos los modelos a una bd real y hace el uso del archivo creado en migrations.
+        node_modules/.bin/sequelize db:migrate 
 
 
 
