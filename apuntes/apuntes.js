@@ -421,7 +421,15 @@
                 Los seederes son informacion falas que podemos probar en nuestros modelos
     CONFIG
         "storage" es donde va ir nuestra base de datos.
-         
+    ------SQlite es una extensino de visualstudio nos permite manejar tablas de sqllite-----
+
+    node_modules/.bin/sequelize model:generate --name Contact --attributes firstname:string,lastname:string,phone:string,email:string
+
+    en la consola de esta forma cramos un nuevo modelo con los atributos y tipos de datos.
+         Sequelize crea el modelo y crea la bd en algun administrador de db ya sea postgress, sqlserver o mysql.
+    
+        migracion
+        es un control de versiones, lleva todos los modelos a una bd real.
 
 
 
