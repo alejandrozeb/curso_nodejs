@@ -409,7 +409,19 @@
 
     SEQUELIZE
         aplicaion de consola
-        
+    iniciar un prot¡yecto con sequelize
+    node_modules/.bin/sequelize init 
+    en el config estan los datos de la bd 
+    esta disponible para diferentes ambientes
+    models 
+                para manejar las bd
+                a traves del index podemos acceder a los modelos
+                Podemosconfigurar si esta en desarrollo y development
+    En index podemos cambiar el ambiente de desarrollo
+                Los seederes son informacion falas que podemos probar en nuestros modelos
+    CONFIG
+        "storage" es donde va ir nuestra base de datos.
+         
 
 
 
