@@ -428,10 +428,17 @@
     en la consola de esta forma cramos un nuevo modelo con los atributos y tipos de datos.
          Sequelize crea el modelo y crea la bd en algun administrador de db ya sea postgress, sqlserver o mysql.
         ademas crea en migracion su archivo listo para realizar operaciones 
-        migracion
+        migracion tambien sequelize pluraliza el nombre de las tablas contact despues de migrarse pasa a contacts.
         es un control de versiones, lleva todos los modelos a una bd real y hace el uso del archivo creado en migrations.
         node_modules/.bin/sequelize db:migrate 
 
+        se agrega el archivo db.sqlite
+    SEEDERS
+        node_modules/.bin/sequelize seed:generate --name seed-contact 
 
+        creamos un seeder donde metemos informacin de prueba
+        modificamos el seeder ocn los datos que queramos y ejecutamos la siguiente linea(ademas de verificar el nombre de la tabla)
+        node_modules/.bin/sequelize db:seed:all
+    ya tendriamos nuestro orm configurado
 
 */
