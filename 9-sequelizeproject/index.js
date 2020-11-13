@@ -11,15 +11,37 @@ if(params.length <= 2){
 const args = params.slice(2);   //a partir de la 2da pocision
 
 const command = args[0].split(":")[0].substring(2);
-console.log(command2);
 //sacamos el create
 const entity = args[0].split(":")[1];
 //sacamos el contact
 
 switch(command){
     case CRUD.CREATE:
+        //console.log('created!!');
+        const data = {};
+        args.slice(1).map((arg) => {
+            const tmp = arg.split("=");
+            data[tmp[0].substring(2)] = tmp[1];
+        });
+
+        console.log(data);
+        db[entity].create(data)
+        .then(() =>{console.log('Contact created!')})
+        .catch(console.log);
+        //insetarmos la data, devuelve una promesa
+        break;
+    case CRUD.READ:
+        console.log('READ!!');
+        db[entity].findAll()
+        .then(console.log)
+        .catch(console.log);
+        break;
+/*     case CRUD.CREATE:
         console.log('created!!');
         break;
+    case CRUD.CREATE:
+        console.log('created!!');
+        break; */
     default:
         console.log('Operation not found!');
 }
