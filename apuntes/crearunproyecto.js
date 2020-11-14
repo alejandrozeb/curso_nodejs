@@ -13,6 +13,10 @@ ORM nad ODM comands
         axios para request y response entre front y back.
         node-cron para programar crons.
         cheerio para procesar html.
+
+EJECUTAR PROYECTOS  
+    node index
+        para ejecutar el proyecto
     
 
 */

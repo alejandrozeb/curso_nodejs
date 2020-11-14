@@ -457,5 +457,5 @@
             elegimos azure o el que prefieras
             el plan free 
             y ya tenemos creado un cluster.
-            
+            luego de creado el cluster damos en connect la segunda opcion y copiamos el codigo.
 */
