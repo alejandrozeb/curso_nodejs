@@ -458,4 +458,6 @@
             el plan free 
             y ya tenemos creado un cluster.
             luego de creado el cluster damos en connect la segunda opcion y copiamos el codigo.
+
+            Mongoose es flexibe si quieres agregar a una tabla un atributo te lo permite sin ingun probelma.
 */

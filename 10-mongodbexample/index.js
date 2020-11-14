@@ -3,3 +3,12 @@ const connectionString = "mongodb+srv://alejandro:tigre003@cluster0.7xxfx.mongod
 
 mongoose.connect(connectionString,{useNewUrlParser:true});
 //ya tenemos la coneccion
+
+const Cat = mongoose.model("Cat",{name: String});
+//especificamos el modelo
+
+const kitty = new Cat({name: 'Galfield'});  //cremos la data
+kitty.save()    //guarda en la bd
+.then(() => console.log("cat has been saved"));         //regresa una promesa
+
+Cat.find().then(console.log);   //imprime todo, es asincrono esta linea puede ejecutarse primero
