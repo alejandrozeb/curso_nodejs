@@ -441,4 +441,21 @@
         node_modules/.bin/sequelize db:seed:all
     ya tendriamos nuestro orm configurado
 
+    MONGOSE: BD NO RELACIONALES
+           MongoDBatlas->mongosee
+           proyecto web scraping(Cron Job)
+           CRON JOB: es una herramienta extremadamente util que es utilizada para implementar cualquier tarea repetitiva de manera automática. en linux es muy utilizada. la usamos cada cierto tiempo y se jecuta en segundo plano.
+           WEB SCRAPING: Es una tecnica utilizada mediante programas de software para extraer informacion de sitios web.
+
+           ARQUITECTURA.
+           cron Job HTTP: axios         -> web: cnn
+                    process: cheerio
+                    Save on DB(mongosse)
+            creamos un cluster en mongodbatlas
+            https://cloud.mongodb.com/v2/5faf707e292fd44401e9cc70#clusters
+            logeamos i nos registramos y accedemos a la opcion de cluster
+            elegimos azure o el que prefieras
+            el plan free 
+            y ya tenemos creado un cluster.
+            
 */
