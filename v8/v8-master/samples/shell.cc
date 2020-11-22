@@ -108,7 +108,7 @@ v8::Local<v8::Context> CreateShellContext(v8::Isolate* isolate) {
   // Create a template for the global object.
   v8::Local<v8::ObjectTemplate> global = v8::ObjectTemplate::New(isolate);
   // Bind the global 'print' function to the C++ Print callback.
-  global->Set(isolate, "print", v8::FunctionTemplate::New(isolate, Print));
+  global->Set(isolate, "print1", v8::FunctionTemplate::New(isolate, Print));
   // Bind the global 'read' function to the C++ Read callback.
   global->Set(isolate, "read", v8::FunctionTemplate::New(isolate, Read));
   // Bind the global 'load' function to the C++ Load callback.
