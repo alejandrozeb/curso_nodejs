@@ -460,4 +460,12 @@
             luego de creado el cluster damos en connect la segunda opcion y copiamos el codigo.
 
             Mongoose es flexibe si quieres agregar a una tabla un atributo te lo permite sin ingun probelma.
+
+
+            npm i dotenv@8.2.0
+
+            este paquete nos ayudara a manejar nuestras variables de entorno.
+
+            mongodb+srv://alejandro:tigre003@cluster0.7xxfx.mongodb.net/db_test?retryWrites=true&w=majority"
+            Esta es una variable tipo URI.
 */
