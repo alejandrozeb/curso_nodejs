@@ -5,19 +5,26 @@ const mongoose = require('mongoose');   //importando moongose 1
 const {MONGO_URI} = require('./config/index'); //2
 
 const axios = require('axios').default;
-
-
-
-
+//para buscar entre las etiquetas
+const cheerio = require('cheerio');
+const cron = require("node-cron");
 //mongoose.connect(MONGO_URI,{useNewUrlParser:true}); //3
 //ya tenemos la coneccion cone stas 3 lineas(1,2,3)
+//funcion anonima
+(async () => {
+    const html =await axios.get("https://cnnespanol.cnn.com/");
+    const $= cheerio.load(html.data);   //convierte la data
+    const titles = $(".news__title");
+    console.log(titles);
+})();
+
 
 //webscrapping a la pagina de cnn
-const html = axios.get("https://cnnespanol.cnn.com/");//tae la pagina html en una promesa
+//const html = axios.get("https://cnnespanol.cnn.com/");//tae la pagina html en una promesa
 
-html.then(data => {
+/* html.then(data => {
     console.log(data);
-});
+}); */
 
 
 
