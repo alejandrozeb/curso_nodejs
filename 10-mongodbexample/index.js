@@ -8,11 +8,14 @@ const axios = require('axios').default;
 //para buscar entre las etiquetas
 const cheerio = require('cheerio');
 const cron = require("node-cron");
-//mongoose.connect(MONGO_URI,{useNewUrlParser:true}); //3
-//ya tenemos la coneccion cone stas 3 lineas(1,2,3)
-//funcion anonima
-(async () => {
-    const html =await axios.get("https://cnnespanol.cnn.com/");
+mongoose.connect(MONGO_URI,{useNewUrlParser:true}); //3
+const {BreakingNew} = require("./models");
+//usando cron
+//recibe un cron expresion que determina cada cuanto se ejecutara el callback y el siguiente es una callback que se ejecutara
+//0 */4 * * * cada 4 horas
+//* * * * * * cada minuto
+cron.schedule("* * * * * *", async () => {
+    const html = await axios.get("https://cnnespanol.cnn.com/");
     const $= cheerio.load(html.data);   //convierte la data
     const titles = $(".news__title");
     titles.each((index,element) => {
@@ -20,17 +23,41 @@ const cron = require("node-cron");
              title: $(element).text().toString(),
              link: $(element).children().attr("href")
          };
-         console.log(breakingNew);
-    })//es un for
-})();
+         //console.log(breakingNew);
+         BreakingNew.create([breakingNew]);
+    });
+    console.log('cron job executed');
+});
+
+
+
+
+
+
+
+
+
+
+//ya tenemos la coneccion cone stas 3 lineas(1,2,3)
+//funcion anonima
+    //const html =await axios.get("https://cnnespanol.cnn.com/");
+    //const $= cheerio.load(html.data);   //convierte la data
+    //const titles = $(".news__title");
+    //titles.each((index,element) => {
+         //const breakingNew = {
+            // title: $(element).text().toString(),
+          //   link: $(element).children().attr("href")
+        // };
+      //   console.log(breakingNew);
+    //});//es un for
 
 
 //webscrapping a la pagina de cnn
 //const html = axios.get("https://cnnespanol.cnn.com/");//tae la pagina html en una promesa
 
-/* html.then(data => {
-    console.log(data);
-}); */
+//html.then(data => {
+  //  console.log(data);
+//});
 
 
 

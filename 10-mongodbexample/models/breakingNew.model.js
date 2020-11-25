@@ -10,5 +10,5 @@ const BreakingNewSchema = new Schema({
 );
 //time stamps agrega atributos a la tabla nos permite ver la fecha de creacion y fecha de actualizacion
 
-module.exports = mongoose.model("Cat", BreakingNewSchema);
+module.exports = mongoose.model("BreakkingNew", BreakingNewSchema);
 //exportamos nuestro modelo
