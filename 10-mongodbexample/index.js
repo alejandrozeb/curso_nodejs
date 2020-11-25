@@ -15,7 +15,13 @@ const cron = require("node-cron");
     const html =await axios.get("https://cnnespanol.cnn.com/");
     const $= cheerio.load(html.data);   //convierte la data
     const titles = $(".news__title");
-    console.log(titles);
+    titles.each((index,element) => {
+         const breakingNew = {
+             title: $(element).text().toString(),
+             link: $(element).children().attr("href")
+         };
+         console.log(breakingNew);
+    })//es un for
 })();
 
 
