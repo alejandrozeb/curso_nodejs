@@ -17,6 +17,7 @@ ORM nad ODM comands
 EJECUTAR PROYECTOS  
     node index
         para ejecutar el proyecto
-    
+    npm run dev
+        para correr con nodemon previa configuracion en package
 
 */
