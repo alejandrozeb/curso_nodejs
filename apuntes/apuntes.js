@@ -468,4 +468,39 @@
 
             mongodb+srv://alejandro:tigre003@cluster0.7xxfx.mongodb.net/db_test?retryWrites=true&w=majority"
             Esta es una variable tipo URI.
+
+    FRONTEND Y BACKEND
+        NO tener un problema al consultar un dato.
+        
+        frontend es la parte visual(cliente) que se utiliza para iteractuar con cualquier software o proceso. formado por html,css y js en web
+
+        backend es la parte de un software que manipula la logica de negocio y peristencia de los datos(servidor)
+
+        framework es una estrucutra conceptual y tecnologica de soporte definido, normalmente con artefactos o modulos de software concretos, que puede servir de base para la organizacion y desarrollo de software.
+
+        Conjuntos de funciones que una comunidad desarrollo
+
+        front: angular, react, vue
+        back: nest js, sails js, express, adonis.
+
+        cuando usarlos?
+        buscamos soporte de una comunidad
+        agilidad en tiempo de desarrollo
+        integraciones de terceros, como con google o facebook o una bd atravez de un orm.
+
+        cuando no?
+        no conocemos nada del lenguaje de programaccion
+        Caemos en el juego de la moda de los frameworks.
+        No tiene respaldo de una comunidad.
+
+
+        que haremos
+        Nodejs backend express
+        Angular Frontend
+
+                postman
+                Angular+typeScript
+
+
+
 */
