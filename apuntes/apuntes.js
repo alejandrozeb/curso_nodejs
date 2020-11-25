@@ -497,9 +497,30 @@
         que haremos
         Nodejs backend express
         Angular Frontend
-
+        Descargar:
                 postman
                 Angular+typeScript
+                npm install -g @angular/cli
+                instala angular de forma global
+                npm install -g typescript
+                instala typescript de forma global
+        
+    API
+        configuracion del ambiente
+        Modelos moongose
+        Seeders _> crear data de prueba
+        Rutas 
+        middlewares _> para el servidor de express
+
+        conatremos con 3 endpoints
+                api/technologies
+                api/technology{id}
+                api/technology/search
+        dependencias de produccion
+        npm i cors@2.8.5 express@4.17.1 mongoose@5.7.10
+        dependencias de desarrollo
+        npm i -D dotenv@8.2.0 nodemon@1.19.4
+                
 
 
 
