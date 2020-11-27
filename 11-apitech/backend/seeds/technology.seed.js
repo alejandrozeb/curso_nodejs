@@ -1,3 +1,8 @@
+//para insertar a una bd
+const mongoose = require('mongoose');
+const {MONGO_URI} = require('../config');
+const {Technology} = require('../models');
+mongoose.connect(MONGO_URI,{useNewUrlParser:true});
 const technologies=[
     {
       name: "Node.js",
@@ -76,5 +81,10 @@ const technologies=[
       tags: ["javascript", "vue", "frontend"],
       logo: "vue.svg"
     }
-  ]
+  ];
+
+  Technology.create(technologies).then(() =>{
+    console.log('Technologies Created');
+    mongoose.disconnect();
+  }).catch(console.log);
   
