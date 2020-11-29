@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const {MONGO_URI} = require('../config');
 const {Technology} = require('../models');
-mongoose.connect('mongodb://localhost',{useUnifiedTopology: true});
+mongoose.connect(MONGO_URI,{useNewUrlParser: true, useUnifiedTopology:true});
 const technologies=[
     {
       name: "Node.js",
@@ -83,8 +83,10 @@ const technologies=[
     }
   ];
 
-  Technology.create(technologies).then(() =>{
+  Technology.create(technologies)
+  .then(() =>{
     console.log('Technologies Created');
     mongoose.disconnect();
-  }).catch(console.log);
+  })
+  .catch(console.log);
   
