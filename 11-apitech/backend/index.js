@@ -4,8 +4,12 @@ const server = require('./server');
 const {PORT,MONGO_URI} = require("./config");
 
 const mongoose= require('mongoose');
-//mongoose.connect(MONGO_URI,{useNewUrlParser: true, useUnifiedTopology:true});
-mongoose.connect('mongodb://localhost', { useUnifiedTopology: true })
+mongoose.connect(MONGO_URI,{
+    useNewUrlParser: true, 
+    useUnifiedTopology:true,
+    useCreateIndex: true
+})
+/* mongoose.connect('mongodb://localhost', { useUnifiedTopology: true }) */
 .then(()=>{
     server.listen(PORT, () =>{
         console.log(`CodingApp backend runnig on port ${PORT}`);
@@ -13,6 +17,6 @@ mongoose.connect('mongodb://localhost', { useUnifiedTopology: true })
 })
 .catch(console.log)
 
-server.listen(PORT, () =>{
+/* server.listen(PORT, () =>{
     console.log(`codingApp backend runnig on port: ${PORT}`);
-});
+}); */
