@@ -19,4 +19,20 @@ server.get("/api/technologies", async (req,res)=>{
     //añadimos la ruta del logo
     return res.send({error: false, data: technologies});//automaticamente detecta un 200
 });
+
+server.get("/api/technology/:id", async (req,res)=>{
+    const {id} = req.params;
+    console.log(id);
+    let technology = await Technology.findById(id);
+    console.log(technology);
+    //console.log(technologies);
+        technology.logo = `${req.protocol}://${req.headers.host}/img/${technology.logo}`;
+    //añadimos la ruta del logo
+    return res.send({error: false, data: technology});//automaticamente detecta un 200
+});
+
+server.get("/api/test", (req,res)=>{
+    return res.send({error:true});
+});
+
 module.exports = server;
