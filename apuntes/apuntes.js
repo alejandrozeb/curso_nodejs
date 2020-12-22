@@ -551,7 +551,9 @@
         const color: string = "red";
                 al momento de cambiar el valor de color tambien tenemos que cambiar el tipo de dato.
 
-        
+        --------------TYPESCRIPT---------------
+        conoceremos los tipos,funciones(ti`padas y normales),interfaces(contratos),clases,decoradores.
+        estos se usan bastate en Angular.
 
 
 
