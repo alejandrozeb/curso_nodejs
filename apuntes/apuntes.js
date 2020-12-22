@@ -524,7 +524,35 @@
         configurando mongo atlas con las credenciales:
         alejandro-alejandro3
         ademas realize un curso de mongo y mongoatlas visitar el repositorio `para mas contenido respecto a mongo.
+------------------FRONTEND--------------
+    ANGULAR
+        framework de google, es escalable y basado en typescript en un lp desarrollado por microsoft, el cual cuenta con herramientas de poo muy favorable si se tiene proyectos grandes.
+        tscript ----> javascript
+        superset
         
+        superset el navegador nunca se enterar que el codigo fue escrito a js. ES UN lenguaje escrito sobre otro lenguaje.
+        es muy similar a js y c.
+        cuando usar typescript
+        -granes proyectos
+        -equipos con fuerte conocimiento de opp
+        -evolucion constante.
+
+        cuando no usar?
+        cuando no tengamos conocimiento solido en poo
+        cuando el tipado sea un problema
+
+        js
+        console.log("hello world");
+         const color= "red";
+         color=7.67;
+
+        ts
+        console.log("hello world");
+        const color: string = "red";
+                al momento de cambiar el valor de color tambien tenemos que cambiar el tipo de dato.
+
+        
+
 
 
 */
