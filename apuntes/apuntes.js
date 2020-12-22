@@ -521,7 +521,10 @@
         dependencias de desarrollo
         npm i -D dotenv@8.2.0 nodemon@1.19.4
                 
-
+        configurando mongo atlas con las credenciales:
+        alejandro-alejandro3
+        ademas realize un curso de mongo y mongoatlas visitar el repositorio `para mas contenido respecto a mongo.
+        
 
 
 */
