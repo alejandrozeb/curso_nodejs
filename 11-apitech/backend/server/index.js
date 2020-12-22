@@ -31,6 +31,17 @@ server.get("/api/technology/:id", async (req,res)=>{
     return res.send({error: false, data: technology});//automaticamente detecta un 200
 });
 
+server.get("/api/technology/search/:name", async (req,res)=>{
+    const {name} = req.params;
+    let technologies = await Technology.find({name:{$regex: new RegExp(name,"i")}});
+    technologies = technologies.map((technology)=>{
+        technology.logo = `${req.protocol}://${req.headers.host}/img/${technology.logo}`;
+        return technology;
+    });
+    //añadimos la ruta del logo
+    return res.send({error: false, data: technologies});//automaticamente detecta un 200
+});
+
 server.get("/api/test", (req,res)=>{
     return res.send({error:true});
 });
