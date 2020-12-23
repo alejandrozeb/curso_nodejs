@@ -8,5 +8,7 @@ tsc --init  crea un json con configuracion de ts
     module es donde maneja los moduos node
     strict  ts sera estricto
     esModuleInterop interaccion con nodejs
+tsc
+    para copilar el codigo de ts a js. ademas podemos copilar las veces que queramos el archivo resultante se sobreescribira
 
 */

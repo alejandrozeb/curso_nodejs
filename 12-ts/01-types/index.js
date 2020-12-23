@@ -1,26 +1,22 @@
+"use strict";
 //types
 //TS no da error cuando no especificamos el tipo
-const framework1 = "Angular";
+var framework1 = "Angular";
 //pero no tiene mucho sentido, para dar un tipo usamos
-let framework: string = "Angular";
+var framework = "Angular";
 //si tratamos de cambiar el valor
 //framework = 10; //tenemos un error que no puede ser cambiada
 //al asignar un valor debemos colocar el correspondiente o igual tenemos un error
-const isProduction: boolean=true;
+var isProduction = true;
 //lo mismo pasa con los tipo number
-const PORT: number = 3000;
+var PORT = 3000;
 //arrays 
 //ANY de cualquier tipo de dato
-const styles = [1, "solo texto"];
+var styles = [1, "solo texto"];
 //si cambiamos a uno estricto con genericos
-const styles2: Array<string> = ["./css/style.css"];
-
+var styles2 = ["./css/style.css"];
 //funciones
-
-const sayHello: Function = (name: string): string => `Hello ${name}`;
-const value: string= sayHello("alejandro");
+var sayHello = function (name) { return "Hello " + name; };
+var value = sayHello("alejandro");
 console.log(value);
-
 //ts viene con un transpilador que genera el js
-
-
