@@ -59,5 +59,16 @@ comando----------
 ng serve
 copila el codigo y usa webpack para que el navegador lo pueda interpretar, 4200 es el puerto por defecto
 ademas angular al realizar un cambio lo detecta y copila la informacion automaticamente.
+crearemos un componente
+
+ng generate component components/technologyCard
+
+o fomra abreviada
+
+ng g c components/technologyCard
+
+usamos camelcase pero angular lo cambia a - como separadores.
+
+appmodule se actuliza cuando se crea un nuevo componente
 
 */
