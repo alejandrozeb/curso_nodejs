@@ -23,4 +23,37 @@ creara el directorio frontend con los archivos que angular necesita, ademas al m
 
 angular se encarga de instalar todas las dependencias para iniciar l proyecto.
 
+e2e en to end sirve para hacer pruebas
+node_modules dependedencias
+src el core de angular
+editor config 
+git ignore
+angular json tiene la configuracion del proyecto
+brower  configuracion de browser
+package json
+readme  git
+tsconfig tsconfig spec.json config de ts
+tslint son las
+
+src
+    app se guardan toda la estrucutra de angular
+    assets publicas estilos imagenes
+    enviroments configuracion de producion y testing
+    favicon
+    index html archivo principal
+        renderiza en app-root
+    main ts inicia la configurarion de ts
+    styles.css es el css global
+    test.ts configuracon para testing con ts
+
+    app
+        approuting compoment module
+        tiene un decorador de angular ahi se inyectan las dependencias.
+        agregaremos ahi nuestros componentes
+    angular separa las responsbilidades
+        componentes
+            tenemos un selector
+            vista
+            coleccion de estilos
+
 */
