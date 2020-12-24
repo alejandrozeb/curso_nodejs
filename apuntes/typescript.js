@@ -71,4 +71,8 @@ usamos camelcase pero angular lo cambia a - como separadores.
 
 appmodule se actuliza cuando se crea un nuevo componente
 
+ng g c pages/home
+
+creamos los diferentes componentes que va a tener nuestro proyetco
+
 */
