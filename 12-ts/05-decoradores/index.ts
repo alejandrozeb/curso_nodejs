@@ -23,7 +23,7 @@ class Car {
 }
 
 const nissan: Car = new Car("Nissan");
-console.log(nissan.selfDriving);    //no reconoce el decoraador
-console.log("whells"+nissan.wheels);
+//console.log(nissan.selfDriving);    //no reconoce el decoraador
+//console.log("whells"+nissan.wheels);
 
 //angular usa bastante decoradores
