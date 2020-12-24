@@ -75,4 +75,16 @@ ng g c pages/home
 
 creamos los diferentes componentes que va a tener nuestro proyetco
 
+---servicios 
+son los recursos que consumira nuestro proyecto de terceros en este caso nuestra api.
+comunicacion.
+    ng g s services/http
+para crear un servicio
+
+--componentes generales
+
+    ng g c shared/navbar
+en shared crearemos todos los componentes que compartiran nuestra aplicacion.
+
+
 */

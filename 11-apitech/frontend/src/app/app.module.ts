@@ -9,6 +9,7 @@ import { SearchComponent } from './pages/search/search.component';
 import { TechnologiesComponent } from './pages/technologies/technologies.component';
 import { TechnologyComponent } from './pages/technology/technology.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './pages/home/home.component';
     SearchComponent,
     TechnologiesComponent,
     TechnologyComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
