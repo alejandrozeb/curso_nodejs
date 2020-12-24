@@ -55,5 +55,9 @@ src
             tenemos un selector
             vista
             coleccion de estilos
+comando----------
+ng serve
+copila el codigo y usa webpack para que el navegador lo pueda interpretar, 4200 es el puerto por defecto
+ademas angular al realizar un cambio lo detecta y copila la informacion automaticamente.
 
 */
