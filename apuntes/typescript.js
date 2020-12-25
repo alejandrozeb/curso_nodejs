@@ -113,5 +113,14 @@ enrutamos nuestros componentes
     redirectTo: "home"
   }
 
+  el ultimo objeto es en caso de errores
+
+  para usar las vistas usamos el app compomnent eliminamos el contenido y escribimos codigo nuevo.
+
+  en componet.ts de cualquieer componente que tengamos veremos un selector con esa linea podemos usarlo como etiqueta a nuestra vista.
+
+  <router-outlet></router-outlet>
+  recnoce nuestras rutas con nuestros componentes
+
 
 */
