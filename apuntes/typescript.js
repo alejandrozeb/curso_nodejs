@@ -86,5 +86,10 @@ para crear un servicio
     ng g c shared/navbar
 en shared crearemos todos los componentes que compartiran nuestra aplicacion.
 
+bootstrao css y js
+noes buena practica usar otra libreria como jquery.
+
+
+
 
 */
