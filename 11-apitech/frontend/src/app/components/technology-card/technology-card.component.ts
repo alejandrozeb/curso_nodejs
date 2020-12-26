@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-technology-card',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechnologyCardComponent implements OnInit {
 
+  @Input() technology: any ={}//al moneto de llamar al selector o tag tienen que pasarle rechnology
   constructor() { }
-
   ngOnInit(): void {
-  }
+  } 
 
 }
+//recibira toda la data de technologies
