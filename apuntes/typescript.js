@@ -122,5 +122,10 @@ enrutamos nuestros componentes
   <router-outlet></router-outlet>
   recnoce nuestras rutas con nuestros componentes
 
+  http con angular
+  en imporrs de app.module.ts imporatmeos 
+  HttpClientModule
 
+  en el objeto como el require.
+  import {HttpClientModule} from '@angular/common/http';
 */
