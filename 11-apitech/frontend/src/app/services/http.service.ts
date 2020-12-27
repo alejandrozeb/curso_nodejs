@@ -14,7 +14,7 @@ export class HttpService {
   constructor(private readonly _http: HttpClient) { }
 
   public getTechnologies(){
-    return this._http.get<Technology[]>(this.baseUrl + "/technologies")
+    return this._http.get<Technology[]>(this.baseUrl + "/technologies");
   }
   public getTechnology(id:string){
     return this._http.get<Technology>(this.baseUrl+"/technology/"+id);
