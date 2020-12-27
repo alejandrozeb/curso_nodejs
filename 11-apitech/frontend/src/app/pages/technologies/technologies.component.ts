@@ -18,8 +18,7 @@ export class TechnologiesComponent implements OnInit {
     this._httpService
     .getTechnologies()
     .subscribe((technologies: Technology[])=>{
-      this.technologies = technologies;
-      debugger
+      this.technologies = technologies["data"];
     })
     
   }
