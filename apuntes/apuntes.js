@@ -704,6 +704,21 @@
     jest@24.9.0  framework de testing
     mockingoose@2.13.2 mocking
 
+    -----------proyecto---------
+    poratl web y movil. API
+     incubadora de ideas
+     usuario, idea, comentarios
+     Analisis y diseño
+     APIRESTFUl nodejs
+     N-capas adaptada con clinete y servidor
+     N¿Base de datos noSQL
+     gitflow workflow   ramas con integraciones
+     autenticacion para la API
+     unit testing   de los metodos creados
+     mocking de nuestrosd datos
+     docuemntacion con swager
+     
+
 
 
 */
