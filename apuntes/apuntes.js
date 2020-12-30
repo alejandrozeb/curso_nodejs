@@ -599,8 +599,90 @@
         Utilizar esta arquitectura en aplicaciones de acoplamineto bajo ejemplo, aplicaciones móviles y APIs
 
         ------------------RESTful-----------------
-        
+        REST es un acronimo de Representational State Transfer, un estilo de arquitectura basado en un conjunto de principios predefinidos que describen cómo se definen y se aboradan los recusos a través de un servicio web.
 
+        RESTFUL Servicio web que implementa los principios REST.
+
+        Algunas caracterisicas RESTFUL
+                Urls limpias y legibles
+                JSON o XML
+        Requerimineto 1
+        El API debe permitir administrar del perfil de usuarios
+        /getAllProfiles
+        /getProfile?id=2
+        /createProfile
+        /DeleteProfile?id=4
+        /updateProfile?name=Edgar
+        despues se pide mas funciones
+
+        EL API debe permitir obtener informacion adicional de amigos, así también como la capacidad de buscar perfiles por nombre.
+        version 2[xml]
+        
+        /getAllProfiles
+        /getProfile?id=2
+        /getProfileWithFrineds?id=2
+        /searchProfileByName?name=kelvin
+        /createProfile
+        /DeleteProfile?id=4
+        /updateProfile?name=Edgar
+
+        el codigo es redundadnte devuelves la misma estrucutra con el mismo cambio
+
+        Requerimineto 3
+        version 3 [json,xml]
+        e solicita ademas que admita las respuestas en formato JSON en algunas de las funciones actuales para que sea RESTful.
+
+        (se agregan endpoints para json)
+
+        /getAllProfiles
+        /getProfile?id=2
+        /getProfileJSON?id=2
+        /getProfileWithFrineds?id=2
+        /getProfileWithFrinedsJSON?id=2
+        /searchProfileByName?name=kelvin
+        /searchProfileByNameJSON?name=kelvin
+        /createProfile
+        /DeleteProfile?id=4
+        /updateProfile?name=Edgar
+    se agregan endpoints para el formato json
+    Los endponits se acerca al estilo REMOTE PROCEDURE CALL que no es REST
+    EN rpc los endpoints son funciones en REst son entidades
+
+    PRINCIPIOS REST
+    escalable y menos redundante.
+    preocupaciones
+    rendimiento escalabilidad simplicidad portabilidad confiabilidad
+    estos son los principios que siguen REST
+    ---------cleinte / servidor
+    fornt end backend
+
+    -----------sistemas de capas
+    se debe organizar jerarquicamenete, la orquestacion ayuda a la comunicacion entre componentes
+    capa n 
+    capan-1
+
+    ------sin estado
+                    headers,body,params,query
+    servidor    <-----------------------
+
+    describe que una solicitud debe tener toda la informacion necesaria Tokens
+
+    -------------interfaz uniforme---------
+    Verbis http media types, HATEOAS.
+
+    ---------cache-------
+    se deben definir como cachables y no cachables
+            1er requets            
+    servidor 
+             2 do request
+     mejora la velocidad y experiencia del usuario
+     
+     -------codigo en demanda-----------
+     servidor <-----------------¿json? xml mediatype------
+
+    Siguiendo estos princiipos podemos contruir  una API
+
+    
 
 
 
