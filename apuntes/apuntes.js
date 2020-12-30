@@ -555,6 +555,53 @@
         conoceremos los tipos,funciones(ti`padas y normales),interfaces(contratos),clases,decoradores.
         estos se usan bastate en Angular.
 
+        -------------API REST----------------
+        API se trata de un conjunto de definicioens y protocolos que se utilizan para desarrollar e integrar el software de las aplicaciones.
+        Dan servicios si dar informacion de como estan implementadas.
+        APPLICATION PROGAMMING INTERFACE
+        Arquitecto de sofware
+        en base a objetivos empresariales decide y da respuesta a las siguienttes preguntas.
+        ¿Que lenguaje?
+        ¿Si se debe usar un Framework?
+        ¿ Que Patrones de diseño?
+        ¿ La estructura del proyecto?
+        ¿Que Base de datos?
+        entre otras...
+        
+        Patron arquitectonico o arquitectura de software
+
+        Es una Solución general y reutilizable a un problema común en la arquitectura de software dentro de un contexto dado.
+        ej cliente/servidor , N capas, de bus de eventos, interprete, maestro/esclavo 
+
+        Usaremos cliente/servidor y cliente/servidor
+
+        ------------N capas--------
+        se puede descomponer en subtareas
+        capa de presentacion UI
+        capa de aplicacion  Implementacion con otros servicios
+        capa de negocios logica de negocio
+        Capa de datos   base de datos o data disponble
+
+        capa N -> capa(n-1) -> capa 1
+
+        con las capas aseguramos el desacople
+
+        Recomendacion Utilizar esta arquitectura en aplicaciones de escritorio en general y API's.
+
+        -----Arquitectura Cliente/Servidor------
+        servidor-------TCP/IP------cliente
+        API   <--------------------> Angular APP
+
+
+
+        tenemos un servidor que puede tener varios clientes e intercambian informacion con http.
+
+        Utilizar esta arquitectura en aplicaciones de acoplamineto bajo ejemplo, aplicaciones móviles y APIs
+
+        ------------------RESTful-----------------
+        
+
+
 
 
 */
