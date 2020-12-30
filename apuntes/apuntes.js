@@ -696,7 +696,13 @@
         memory-cache@0.2.0 trabajar con cache
         mongoose@5.7.13 ORM noSQL
         swagger-ui-express@4.1.2 documentacion de API
-        
+    ------------dependencias de desarrollo------
+    npm i -D dotenv@8.2.0 nodemon@2.0.1 jest@24.9.0 mockingoose@2.13.2
+
+    dotenv@8.2.0 para configurar nuestras variables de entorno 
+    nodemon@2.0.1 servidor  
+    jest@24.9.0  framework de testing
+    mockingoose@2.13.2 mocking
 
 
 
