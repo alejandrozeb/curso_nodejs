@@ -1,5 +1,6 @@
 import { query } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }//injeccion de depedndencia
 
   ngOnInit(): void {
     
   }
 
   searchTechnology(query:string){
-    alert(query);
+    this._router.navigate(["/search", query]);
   }
 
 }
