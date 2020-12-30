@@ -21,7 +21,7 @@ export class HttpService {
   }
 
   public searchTechnology (query:string){
-    return this._http.get<Technology>(this.baseUrl+"/technology/search"+query);  
+    return this._http.get<Technology[]>(this.baseUrl+"/technology/search"+query);  
   }
   //debemos colocar el generico para detectar que va a devolver
 }
