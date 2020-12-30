@@ -683,6 +683,20 @@
     Siguiendo estos princiipos podemos contruir  una API
 
     
+    -----dependencias del proyecto-----------------------
+                npm install express@4.17.1 express-async-errors@3.1.1 awilix@4.2.3 cors@ compression helmet@3.21.2 bcryptjs jsonwebtoken@8.5.1 memory-cache@0.2.0 mongoose@5.7.13 swagger-ui-express@4.1.2
+        express framework        
+        express-async-errors@3.1.1 controlar errores asyncornas
+        awilix@4.2.3 container de injeccion de depedncias 
+        cors@ rutas petiiones
+        compression ayuda a comprimir la peticiones
+        helmet@3.21.2 seguridad de api
+        bcryptjs encriptado
+        jsonwebtoken@8.5.1 generar token
+        memory-cache@0.2.0 trabajar con cache
+        mongoose@5.7.13 ORM noSQL
+        swagger-ui-express@4.1.2 documentacion de API
+        
 
 
 
