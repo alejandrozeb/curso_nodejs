@@ -3,7 +3,7 @@ let _homeService= null;
 
 class HomeController{
     constructor({HomeService}){
-        _homeService= HomeService;
+        _homeService= HomeService;//debe tener el mismo nombre de startup
     }
     //metodo
     index(req,res){
