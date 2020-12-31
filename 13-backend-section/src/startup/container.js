@@ -8,6 +8,8 @@ const {HomeService} = require('../services');
 const container = createContainer();
 
 //creamos un nuevo tipo de injeccion
-
+container.register({
+    HomeService: asClass(HomeService).singleton()
+})
 
 module.exports = container;
