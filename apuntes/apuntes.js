@@ -717,6 +717,12 @@
      unit testing   de los metodos creados
      mocking de nuestrosd datos
      docuemntacion con swager
+
+    flujo de nuetsra arquitectura
+                            servidor
+     get --------------> middleware -> route <-> middleware(AU)<->controller<->servicio<->datos(repo)<->mongodb
+    
+     
      
 
 
