@@ -1,6 +1,6 @@
 //config variables de entorno
 const config = require("../config");
-
+const app = require('.');
 //configuracion de conteneder de injeccion de dependencias 
 
 const {createContainer,asClass,asValue,asFunction} = require('awilix');
@@ -25,6 +25,7 @@ const container = createContainer();
 //creamos un nuevo tipo de injeccion
 container
     .register({
+        app: asClass(app).singleton(),
         router: asFunction(Router).singleton(),
         config: asValue(config)
     })
