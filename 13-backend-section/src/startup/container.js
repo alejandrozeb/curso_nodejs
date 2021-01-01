@@ -1,3 +1,6 @@
+//config variables de entorno
+const config = require("../config");
+
 //configuracion de conteneder de injeccion de dependencias 
 
 const {createContainer,asClass,asValue,asFunction} = require('awilix');
@@ -11,6 +14,8 @@ const {HomeController} = require("../controllers");
 //routes
 
 const {HomeRoutes} = require('../routes/index.routes');
+const Routes = require('../routes');
+const { Router } = require('express');
 
 
 
@@ -20,13 +25,18 @@ const container = createContainer();
 //creamos un nuevo tipo de injeccion
 container
     .register({
-    HomeService: asClass(HomeService).singleton()
+        router: asFunction(Router).singleton(),
+        config: asValue(config)
+    })
+    .register({
+        HomeService: asClass(HomeService).singleton()
     })
     .register({
         HomeController: asClass(HomeController.bind(HomeController)).singleton()    //a la hora de llamar un controlador express cambia de scope entonces esta linea nos permite usar el servicio sin qeu varie el scope
     })
     .register({
         HomeRoutes: asFunction(HomeRoutes).singleton()
-    });
+    })
+
 
 module.exports = container;

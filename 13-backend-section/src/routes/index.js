@@ -24,4 +24,4 @@ module.exports = function({HomeRoutes}){
     //escalabilidad configurada
 
     return router;
-}
+};
