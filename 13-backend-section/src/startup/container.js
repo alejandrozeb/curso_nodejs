@@ -8,6 +8,12 @@ const {HomeService} = require('../services');
 //controllers
 const {HomeController} = require("../controllers");
 
+//routes
+
+const {HomeRoutes} = require('../routes/index.routes');
+
+
+
 const container = createContainer();
 
 
@@ -18,6 +24,9 @@ container
     })
     .register({
         HomeController: asClass(HomeController.bind(HomeController)).singleton()    //a la hora de llamar un controlador express cambia de scope entonces esta linea nos permite usar el servicio sin qeu varie el scope
+    })
+    .register({
+        HomeRoutes: asFunction(HomeRoutes).singleton()
     });
 
 module.exports = container;
