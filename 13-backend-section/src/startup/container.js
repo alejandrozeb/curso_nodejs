@@ -1,10 +1,10 @@
-//config variables de entorno
-const config = require("../config");
-const app = require('.');
-//configuracion de conteneder de injeccion de dependencias 
 
 const {createContainer,asClass,asValue,asFunction} = require('awilix');
 //{.., ayuda a injectar un on¡bjeto como clase, un objeto como un valor, injectar un objeto como una funcion  }
+//config variables de entorno
+const config = require("../config");
+const app = require(".");
+//configuracion de conteneder de injeccion de dependencias 
 
 //importando servicioo
 const {HomeService} = require('../services');
@@ -26,7 +26,7 @@ const container = createContainer();
 container
     .register({
         app: asClass(app).singleton(),
-        router: asFunction(Router).singleton(),
+        router: asFunction(Routes).singleton(),
         config: asValue(config)
     })
     .register({
