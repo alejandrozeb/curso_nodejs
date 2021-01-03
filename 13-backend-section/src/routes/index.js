@@ -5,6 +5,7 @@ const cors = require('cors');
 const  helmet= require('helmet');
 const  compression= require('compression');
 require('express-async-errors');
+const {ErrorMiddleware,NotFoundMiddleware} = require("../middlewares");
 
 module.exports = function({HomeRoutes}){
     const router = express.Router();
@@ -23,5 +24,7 @@ module.exports = function({HomeRoutes}){
     //todas las rutas van a tener v1/api
     //escalabilidad configurada
 
+    router.use(NotFoundMiddleware);
+    router.use(ErrorMiddleware);
     return router;
 };
