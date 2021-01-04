@@ -1,18 +1,20 @@
 //router principal, encargado del middleware principal
 
-const express = require('express');
-const cors = require('cors');
-const  helmet= require('helmet');
-const  compression= require('compression');
-require('express-async-errors');
+const express = require("express");
+const cors = require("cors");
+const  helmet= require("helmet");
+const  compression= require("compression");
+require("express-async-errors");
 const {ErrorMiddleware,NotFoundMiddleware} = require("../middlewares");
 
-module.exports = function({HomeRoutes}){
+module.exports = function({
+    HomeRoutes
+}) {
     const router = express.Router();
     const apiRoutes = express.Router();
 
     apiRoutes
-    .use(express.json)
+    .use(express.json())//bug 
     .use(cors())
     .use(helmet())
     .use(compression());
@@ -28,3 +30,6 @@ module.exports = function({HomeRoutes}){
     router.use(ErrorMiddleware);
     return router;
 };
+
+
+

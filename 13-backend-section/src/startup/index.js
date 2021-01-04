@@ -1,12 +1,11 @@
 //da inicio a nuestro app
-
-const express = require('express');
+const express = require("express");
 
 let _express = null;
 let _config = null;
 
 class Server{
-    constructor({config, router}){
+    constructor({ config, router }){
         _config = config;
         _express = express().use(router);
     }
@@ -14,11 +13,12 @@ class Server{
     start(){
         return new Promise(resolve=>{
             _express.listen(_config.PORT, () =>{
-                console.log(_config.APPLICATION_NAME + "API runnig on port"+ _config.PORT);
+                console.log(_config.APPLICATION_NAME + " API runnig on port ctm "+ _config.PORT);
+
                 resolve();
             });
         });
     }
-};
+}
 
 module.exports = Server;

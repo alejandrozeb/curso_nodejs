@@ -1,7 +1,7 @@
 
 const {createContainer,asClass,asValue,asFunction} = require('awilix');
 //{.., ayuda a injectar un on¡bjeto como clase, un objeto como un valor, injectar un objeto como una funcion  }
-//config variables de entorno
+//  config variables de entorno
 const config = require("../config");
 const app = require(".");
 //configuracion de conteneder de injeccion de dependencias 
@@ -12,12 +12,13 @@ const {HomeService} = require('../services');
 const {HomeController} = require("../controllers");
 
 //routes
-
-const {HomeRoutes} = require('../routes/index.routes');
+const {HomeRoutes} = require("../routes/index.routes");
 const Routes = require('../routes');
 
+//models
+//repositories
 
-
+//container
 const container = createContainer();
 
 
@@ -36,7 +37,7 @@ container
     })
     .register({
         HomeRoutes: asFunction(HomeRoutes).singleton()
-    })
+    });
 
 
 module.exports = container;
