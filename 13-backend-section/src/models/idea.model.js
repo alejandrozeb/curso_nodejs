@@ -21,6 +21,13 @@ const IdeaSchema = new Schema({
         required: true,
         autopopulate: true      //trae tod el documento autor
     },
-    comments: []
+    comments: [{
+        type: Schema.Types.ObjectId,
+        ref: "comment",
+        required: true,
+        autopopulate: true      //trae tod el documento autor
+    }]
 });
+
+module.exports =  mongoose.model("idea", IdeaSchema);
 
