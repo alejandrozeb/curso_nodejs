@@ -16,6 +16,8 @@ const CommentSchema = new Schema({
         autopopulate: true      //trae tod el documento autor
     }
 });
+//configurando el plugin para mongoose
+CommentSchema.plugin(require("mongoose-autopopulate"));
 
 module.exports  = mongoose.model("comment", CommentSchema);
 
