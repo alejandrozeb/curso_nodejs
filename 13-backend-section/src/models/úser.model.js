@@ -36,7 +36,7 @@ UserSchema.methods.comparePasswords = function(password){
 
 
 //este es un hook para que cada vez se guarde un documento con mongo
-UserSchema.pre('save',async function(next){
+UserSchema.pre("save",async function(next){
     const user = this; //corresponde al elemento que se esta procesando
 
     //validando la contraseña
