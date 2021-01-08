@@ -51,3 +51,5 @@ class BaseService{
         return await this.repository.delete(id);
     }
 }
+
+module.exports = BaseService;
