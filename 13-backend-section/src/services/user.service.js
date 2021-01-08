@@ -1,4 +1,3 @@
-const { User } = require("../models");
 const BaseService = require("./base.service");
 let _userRepository = null;
 
