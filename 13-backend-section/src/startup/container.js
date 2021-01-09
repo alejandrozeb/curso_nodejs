@@ -7,7 +7,12 @@ const app = require(".");
 //configuracion de conteneder de injeccion de dependencias 
 
 //importando servicioo
-const {HomeService} = require('../services');
+const {
+    HomeService,
+    CommentService,
+    IdeaService,
+    UserService
+} = require('../services');
 //controllers
 const {HomeController} = require("../controllers");
 
@@ -33,7 +38,10 @@ container
         config: asValue(config)
     })
     .register({
-        HomeService: asClass(HomeService).singleton()
+        HomeService: asClass(HomeService).singleton(),
+        UserService: asClass(UserService).singleton(),
+        CommentService: asClass(CommentService).singleton(),
+        IdeaService: asClass(IdeaService).singleton()
     })
     .register({
         HomeController: asClass(HomeController.bind(HomeController)).singleton()    //a la hora de llamar un controlador express cambia de scope entonces esta linea nos permite usar el servicio sin qeu varie el scope
