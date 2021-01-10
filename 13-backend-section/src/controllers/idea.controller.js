@@ -31,6 +31,24 @@ class IdeaController {
         return res.send(deletedIdea);
     }
 
+    async getUserIdeas(req,res){
+        const{userId} = req.params;
+        const ideas = await _ideaService.getUserIdeas(userId);
+        return res.send(ideas);
+    }
+
+    async upvoteIdea(req,res){
+        const { ideaId } = req.params;
+        const idea = await _ideaService.upvoteIdea(ideaId);
+        return res.send(idea);
+    }
+
+    async downvoteIdea(req,res){
+        const { ideaId } = req.params;
+        const idea = await _ideaService.downvoteIdea(ideaId);
+        return res.send(idea);
+    }
+
 }
 
 module.exports = IdeaController;
