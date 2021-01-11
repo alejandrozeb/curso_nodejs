@@ -26,7 +26,11 @@ class CommentController {
         return res.send(deletedComment);
     }
 
-    
+    async getIdeasComments(req,res){
+        const {ideaId} = req.params;
+        const comments = await _commentService-this.getIdeasComments(ideaId);
+        return res.send(comments);
+    }
 
 }
 
