@@ -14,7 +14,12 @@ const {
     UserService
 } = require('../services');
 //controllers
-const {HomeController} = require("../controllers");
+const {
+    HomeController,
+    CommentController,
+    IdeaController,
+    UserController
+} = require("../controllers");
 
 //routes
 const {HomeRoutes} = require("../routes/index.routes");
@@ -44,7 +49,11 @@ container
         IdeaService: asClass(IdeaService).singleton()
     })
     .register({
-        HomeController: asClass(HomeController.bind(HomeController)).singleton()    //a la hora de llamar un controlador express cambia de scope entonces esta linea nos permite usar el servicio sin qeu varie el scope
+        HomeController: asClass(HomeController.bind(HomeController)).singleton(),    //a la hora de llamar un controlador express cambia de scope entonces esta linea nos permite usar el servicio sin qeu varie el scope
+        UserController: asClass(UserController.bind(UserController)).singleton(),
+        IdeaController: asClass(IdeaController.bind(IdeaController)).singleton(),
+        CommentController: asClass(CommentController.bind(CommentController)).singleton(),
+        
     })
     .register({
         HomeRoutes: asFunction(HomeRoutes).singleton()
