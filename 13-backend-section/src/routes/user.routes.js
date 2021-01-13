@@ -5,7 +5,7 @@ module.exports = function({ UserController }){
 
     router.get("/:userId", UserController.get);
     router.get("/", UserController.getAll);
-    router.path("/:userId", UserController.update);
+    router.patch("/:userId", UserController.update);
     router.delete("/:userId", UserController.delete);
     return router;
 };

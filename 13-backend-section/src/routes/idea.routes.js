@@ -7,7 +7,7 @@ module.exports = function({ IdeaController }){
     router.get("/:ideaId", IdeaController.get);
     router.get("/:userId/all", IdeaController.getUserIdeas);
     router.post("", IdeaController.create);
-    router.path("/:ideaId", IdeaController.update);
+    router.patch("/:ideaId", IdeaController.update);
     router.delete("/:ideaId", IdeaController.delete);
     router.post("/:ideaId/upvote", IdeaController.upvoteIdea);
     router.post("/:ideaId/downvote", IdeaController.downvoteIdea);
