@@ -4,7 +4,7 @@ class UserController {
     constructor({UserService}){
         _userService = UserService;
     }
-
+   
     async get(req,res){
         const { userId } = req.params; //sadasd/asdasd/id
         const user = await _userService.get(userId);
@@ -14,13 +14,13 @@ class UserController {
 
     async getAll(req, res){
         const users = await _userService.getAll();
-        return res.send(user);
+        return res.send(users);
     }
 
     async update(req,res){
         const {body} = req; 
         const {userId} = req.params;
-        const update = await _userService.update(userId,body);
+        const updatedUser = await _userService.update(userId,body);
 
         return res.send(updatedUser);
     }
