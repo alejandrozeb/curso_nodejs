@@ -26,7 +26,30 @@ ahorra costo.
 
 es opensource.
 
+Como funciona
 
+Para crear un contenedor necesitamos una imagen que los construya, docker tiene su repo de imagenes
+
+2 una imagen es creada a partir de un dockerfile, le da instrucciones de crear la imagen y crear el contenedor
+
+3el dockerfile esta basado en instrucciones
+dockerhub
+
+4 La imagen puede ser compartida y es reutilizable
+
+5 la data de los contenedores persiste en volumenes, no persiste la data al reiniciar el contenedro se pierde la informacion pero se soluciona con volumenes.
+
+-----------IMAGENES--------
+
+Necesito un ambiente para usar node js sin instalar ninguna dependencia en el host.
+
+debemos equipar dependencias 
+
+docker run/pull node:tag
+
+nombre de la imagen y version, 
+
+docker run --name some-mongo
 
 
 
