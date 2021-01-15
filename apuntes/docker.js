@@ -49,7 +49,37 @@ docker run/pull node:tag
 
 nombre de la imagen y version, 
 
-docker run --name some-mongo
+docker run --name some-mongo -p 27017:27017 -d mongo
+
+usamos el puerto 27017
+DOckerfile
+Necesito crear una imagen de mi aplicacion
+
+FROM NODE       --imagen base, basado en alguna technologia
+MAINTAINER alejandro zeballos   --quienee s el crador 
+COPY ./var/wwww           ---el directorio actual se copaira, desde-hasta usa linux 
+MORKDIR /var/www    --direcorio en el contenedor
+RUN npm install     ---instruccciones scripts a ejecutar
+EXPOSE 8081         ----puerto expuesto
+ENTRYPOINT ["node", "server.js"] ----punto de  arranque
+
+
+volume env
+para ejecutar un dockerdile usamos
+docker build. -t my-nodejs-image
+para crear la imagen
+
+la imagenes tambine tienen otra opciones
+necito que la data de mi contener persista
+
+docker run --name some-mongo -p 27017:27017 -d mongo -v -/data:/data/db
+
+por defecto guarda la informacion en data/db.
+docs.docker.com
+
+
+
+
 
 
 
