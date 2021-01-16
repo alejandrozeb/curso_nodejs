@@ -77,6 +77,15 @@ docker run --name some-mongo -p 27017:27017 -d mongo -v -/data:/data/db
 por defecto guarda la informacion en data/db.
 docs.docker.com
 
+para descargar una imagen de nodejs se descarga en el siguiente link
+docker pull node
+para descargar node
+bug de conexion resuelta
+cd "C:\Program Files\Docker\Docker" ./DockerCli.exe -SwitchDaemon
+se debe instalar docker en linux en windows 10 homw no se puede utilizar docker
+
+
+
 
 
 
