@@ -11,7 +11,8 @@ const {
     HomeService,
     CommentService,
     IdeaService,
-    UserService
+    UserService,
+    AuthService
 } = require('../services');
 //controllers
 const {
@@ -51,7 +52,8 @@ container
         HomeService: asClass(HomeService).singleton(),
         UserService: asClass(UserService).singleton(),
         CommentService: asClass(CommentService).singleton(),
-        IdeaService: asClass(IdeaService).singleton()
+        IdeaService: asClass(IdeaService).singleton(),
+        AuthService: asClass(AuthService).singleton()
     })
     .register({
         HomeController: asClass(HomeController.bind(HomeController)).singleton(),    //a la hora de llamar un controlador express cambia de scope entonces esta linea nos permite usar el servicio sin qeu varie el scope
