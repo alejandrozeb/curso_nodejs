@@ -4,7 +4,7 @@ module.exports = function({ AuthController }){
     const router = Router();
 
     router.post("/signup", AuthController.signUp);
-    router.post("/sigin", AuthController.signIn);
+    router.post("/sigin", AuthController.signIn);//este
 
     return router;
 };
