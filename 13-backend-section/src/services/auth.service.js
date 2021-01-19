@@ -7,8 +7,8 @@ class AuthService{
     }
     async signUp(user){
         const {username} = user;
-        const userExit = await _userService.getUserByUsername(username);
-        if(userExit){
+        const userExist = await _userService.getUserByUsername(username);
+        if(userExist){
             const error = new Error();
             error.status = 401;
             error.message = "User already exist";

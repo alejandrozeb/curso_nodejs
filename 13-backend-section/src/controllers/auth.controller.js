@@ -1,5 +1,3 @@
-const { create } = require("../models/user.model");
-
 let _authService = null;
 
 class AuthController {
