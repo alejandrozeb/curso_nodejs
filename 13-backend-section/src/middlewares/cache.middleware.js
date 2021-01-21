@@ -1,10 +1,10 @@
 const mcache = require("memory-cache");
 const {CACHE_KEY} = require("../config");
 
-module.exports = function(req,res,next){
+module.exports = function(duration){
     return (req,res, next) =>{
         const key = CACHE_KEY + req.originUrl || req.url;
-        const cachedbody = mcache.get(cachedbody);
+        const cachedbody = mcache.get(key);
 
         if(cachedbody){
             return res.send(JSON.parse(cachedbody));
