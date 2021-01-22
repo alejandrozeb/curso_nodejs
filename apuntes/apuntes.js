@@ -723,7 +723,10 @@
      get --------------> middleware -> route <-> middleware(AU)<->controller<->servicio<->datos(repo)<->mongodb
     
      
-     
+     ---------------test-----------------
+    usaremos jest desarrollada por facebook
+     mocks data falsa
+    
 
 
 
