@@ -15,5 +15,16 @@ describe("User Repository Test", ()=>{
         jest.clearAllMocks();
     });
 
-    
+    it("Should return a user by id", () => {
+        const _user = {...User};
+        delete _user.password;
+        mockingoose(User).toReturn(user, "findOne");
+        //prepara la entidad
+
+        const _userRepository = new UserRepository({ User });
+        const expected = await _userRepository.get(_user._id);
+
+        //asercion
+        expected(JSON.parse(JSON.stringify(expected))).toMatchObject(_user);
+    });
 })
