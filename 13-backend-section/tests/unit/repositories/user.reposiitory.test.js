@@ -15,7 +15,7 @@ describe("User Repository Test", ()=>{
         jest.clearAllMocks();
     });
 
-    it("Should return a user by id", () => {
+    it("Should return a user by id", async () => {
         const _user = {...User};
         delete _user.password;
         mockingoose(User).toReturn(user, "findOne");
@@ -25,6 +25,6 @@ describe("User Repository Test", ()=>{
         const expected = await _userRepository.get(_user._id);
 
         //asercion
-        expected(JSON.parse(JSON.stringify(expected))).toMatchObject(_user);
+        expect(JSON.parse(JSON.stringify(expected))).toMatchObject(_user);
     });
 })
