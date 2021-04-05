@@ -20,5 +20,17 @@
 
     revierte la ultima migracion
 
+    para editar u añadir otro migrate con los atributos de una tabla modificada
+    
+    npx sequelize-cli migration:create --name primera
+
+    creamos un archivo de migracion nueva
+
+    Editamos l archivo con las tablas y campos necesarios
+
+    npx sequelize-cli db:migrate
+
+    migra la ultima migracion creada
+    
     
 */
