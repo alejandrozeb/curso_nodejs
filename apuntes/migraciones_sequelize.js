@@ -32,5 +32,9 @@
 
     migra la ultima migracion creada
     
-    
+    flujo
+    creamos la bd
+    creamos la migracion y modelo de una entidad
+    editamos la asociaciones en el migrate y en el modelo
+    ejecutamos la migracion    
 */
